@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuddyFind Privacy Policy</title>
+<style>
+  :root { --bg: #f7f5f0; --card: #ffffff; --ink: #14181f; --muted: #5b6370; --line: #e4e0d8; --brand: #b8401a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161c; --card: #1b2129; --ink: #f2f0eb; --muted: #a3abb7; --line: #2b333e; --brand: #f08a5d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  a { color: var(--brand); }
+  code { font-size: 0.92em; background: var(--card); padding: 1px 5px; border-radius: 4px; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; background: var(--card); font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px; border: 1px solid var(--line); }
+  th { font-weight: 700; }
+  mark.todo { background: #ffe08a; color: #14181f; padding: 0 3px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+<p><a href="./">← BuddyFind</a></p>
+<h1>BuddyFind Privacy Policy</h1>
+<p><strong>Effective date:</strong> October 30, 2026</p>
+<p>BuddyFind is an Android app that helps you find your own Bluetooth earbuds, headphones, watches and trackers, and shows their battery. It is made by JC Studio ("we", "us"). This policy explains what the app does with data, in plain words.</p>
+<h2 id="the-short-version">The short version</h2>
+<ul><li>BuddyFind has no account, no sign-up and no server of its own.</li><li>Your saved devices, their battery levels and your settings are stored only on your phone. We never receive them.</li><li>BuddyFind never reads or stores your location.</li><li>We do not sell your data or share it with anyone.</li><li>When the app crashes, it sends a crash report to Google's Firebase Crashlytics, which works for us. Crash reports contain no device names or Bluetooth addresses. See <a href="#crash-reports">Crash reports</a>.</li><li>The app also sends usage statistics to Google Analytics for Firebase, which works for us. They contain no device names or Bluetooth addresses. See <a href="#usage-statistics">Usage statistics</a>.</li><li>This version has no ads and no in-app purchases.</li></ul>
+<h2 id="what-buddyfind-does-on-your-phone">What BuddyFind does on your phone</h2>
+<p><strong>Listening for Bluetooth signals.</strong> While a screen that scans is open (My devices, Nearby, or the hot/cold Find screen), BuddyFind listens for Bluetooth signals around you. For each device it hears, Android gives the app the device's name (if it has one), its Bluetooth address, the signal strength and the kind of device. This includes devices that are not yours, such as a neighbour's speaker. The app uses this to draw the list, the radar and the hot/cold ring. Devices you have not saved are kept only in memory while the screen is open, are never written to storage and are never sent anywhere. BuddyFind does not scan for Bluetooth devices in the background.</p>
+<p><strong>Reading battery levels.</strong> For devices connected to your phone, BuddyFind reads the battery level that the device reports to Android or through the standard Bluetooth Battery Service. Not every device shares it.</p>
+<p><strong>When the app is closed.</strong> When one of your saved devices connects, disconnects or reports a new battery level, Android briefly wakes BuddyFind. The app then records the time and battery level on your phone, updates its home screen widgets and, if the battery is low, shows a notification. Nothing is sent anywhere.</p>
+<p><strong>Playing a sound.</strong> "Play sound" sends a beep to a device that is connected to your phone, over Bluetooth.</p>
+<h2 id="what-is-stored-on-your-phone">What is stored on your phone</h2>
+<p>All of this is kept in BuddyFind's private storage on your phone, which other apps cannot read.</p>
+<div class="table"><table><thead><tr><th>Data</th><th>Why</th><th>How long</th></tr></thead><tbody><tr><td>Your saved devices: Bluetooth address, the device's name, the nickname you gave it, its type, when you saved it, when it was last seen or disconnected, its last signal strength and its last battery level</td><td>To show "My devices", find a device, show "last seen" times and battery levels</td><td>Until you forget the device, clear the app's storage or uninstall the app</td></tr><tr><td>Your settings: sensitivity, vibration, sound, hide unnamed devices, theme, low-battery alert level, whether you have finished the intro and been asked for permissions, how many times the app has been opened</td><td>To remember your choices</td><td>Until you clear the app's storage or uninstall the app</td></tr><tr><td>Small helper records about your saved devices: whether each one is connected and its battery level since it connected, whether a low-battery alert was already shown, and which device each Find widget points to</td><td>Widgets and low-battery alerts</td><td>Connection records go when the device disconnects, alert records when it is charged or forgotten, and a Find widget's device when you pick another one or remove the widget. All of them go when you clear storage or uninstall</td></tr><tr><td>Your language choice for the app</td><td>To show the app in the language you picked</td><td>Stored by Android (Android 13 and later) or by the app (Android 12 and earlier) until you change it or uninstall</td></tr></tbody></table></div>
+<p><strong>Notifications and widgets.</strong> Low-battery notifications and the home screen widgets show your device names and battery levels on your phone. Anyone who can see your screen can see them. If your lock screen is set to hide sensitive notification content, the notification only says "A saved device is low on battery".</p>
+<p><strong>Backups and new phones.</strong> BuddyFind turns off Android's cloud backup, so its data is not copied to your Google Drive, and reinstalling the app starts empty. On some phones with Android 12 or later, moving to a new phone with a direct phone-to-phone transfer (by cable or wirelessly, while setting up the new phone) can still copy BuddyFind's data to the new phone. That transfer goes straight between your two phones and never reaches us.</p>
+<h2 id="what-buddyfind-does-not-do">What BuddyFind does not do</h2>
+<ul><li>It does not ask you to create an account and does not know who you are.</li><li>It does not read, store or send your location (see "Permissions" for why Android 11 and older ask for it).</li><li>It does not access your contacts, photos, files, microphone, camera or messages.</li><li>It does not use your advertising ID.</li><li>It does not sell, rent or trade any data, and does not use data for advertising.</li></ul>
+<h2 id="permissions">Permissions</h2>
+<div class="table"><table><thead><tr><th>Permission</th><th>Android versions</th><th>Why BuddyFind needs it</th></tr></thead><tbody><tr><td>Nearby devices (Bluetooth scan and connect)</td><td>12 and later</td><td>To hear your devices' Bluetooth signals, see which ones are connected, read their battery and play a sound on them. BuddyFind tells Android that it never uses Bluetooth scans to work out your location. Required.</td></tr><tr><td>Location</td><td>8 to 11 only</td><td>On these versions, Android only gives Bluetooth scan results to apps that hold the location permission, and location services must be switched on. BuddyFind asks for it for that reason only. It never reads your location, never stores it and never sends it. Android 12 and later never ask.</td></tr><tr><td>Bluetooth, Bluetooth admin</td><td>11 and earlier</td><td>Granted when you install. Needed to use Bluetooth on these versions.</td></tr><tr><td>Notifications</td><td>13 and later</td><td>Optional. For low-battery alerts. If you say no, everything else works the same.</td></tr><tr><td>Vibration</td><td>All</td><td>A short buzz each time the hot/cold ring gets hotter. You can turn it off in Settings.</td></tr><tr><td>Run at startup, keep the phone awake briefly, foreground service</td><td>All</td><td>Added by Android's widget library (WorkManager), which uses them to redraw the home screen widgets. BuddyFind does not keep a service running in the background.</td></tr><tr><td>Internet, network state</td><td>All</td><td>See below.</td></tr></tbody></table></div>
+<p>You can change these permissions at any time in your phone's Settings &gt; Apps &gt; BuddyFind &gt; Permissions.</p>
+<p><strong>Internet.</strong> BuddyFind uses the internet only to send the crash reports described in "Crash reports". It also uses it to send the usage statistics described in "Usage statistics".</p>
+<h2 id="crash-reports">Crash reports</h2>
+<p>When BuddyFind crashes, it sends a crash report to <strong>Firebase Crashlytics</strong>, a service run by Google LLC, so that we can find and fix the problem. A crash report contains:</p>
+<ul><li>what went wrong in the app's code (the stack trace) and the state of the app at that moment;</li><li>details about the phone at the time of the crash, such as the model, Android version, free memory and storage, and the app version;</li><li>a random installation ID created by Crashlytics, used to count how many installations a crash affects. It is not linked to your name, email or Google account.</li></ul>
+<p>Crashlytics also sends basic session information (for example when the app was opened and which app version was running) so that we can see how many sessions ran without a crash. As with any internet connection, Google's servers also see your phone's IP address when a report is sent.</p>
+<p>BuddyFind does not add your device names, Bluetooth addresses or any other Bluetooth identifier to crash reports. Crash reports are not used for advertising. Google processes this data on our behalf, as our service provider, and may process it in the United States and other countries. Crashlytics keeps crash reports for 90 days and then starts deleting them from its systems. You can read more in <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+<p>We rely on our legitimate interest in keeping the app working to send crash reports. There is no switch for crash reports inside the app in this version. If you do not want them sent, you can uninstall the app.</p>
+<h2 id="usage-statistics">Usage statistics</h2>
+<p>BuddyFind uses <strong>Google Analytics for Firebase</strong>, a service run by Google LLC, to learn how the app is used, for example how many people finish the intro or how often a search ends with "Found it". It sends:</p>
+<ul><li>a list of the screens you open and the actions you take in the app (such as starting a search), with the time;</li><li>a random app-instance ID created by Google Analytics. It is not linked to your name, email or Google account;</li><li>the phone model, Android version, app version and language;</li><li>an approximate region (such as the country or city), which Google works out from your IP address. Google states that Analytics does not store the IP address itself.</li></ul>
+<p>BuddyFind does not add your device names, Bluetooth addresses or any other Bluetooth identifier to these statistics, and does not collect your advertising ID or your phone's Android ID. Ad storage and ad personalization are switched off. Google Analytics keeps this event data for 2 months and then deletes it. Google processes this data on our behalf and may process it in the United States and other countries. You can read more in <a href="https://policies.google.com/technologies/partner-sites">Google's information about how it uses data from apps that use its services</a>.</p>
+<h2 id="google-play">Google Play</h2>
+<p>You download BuddyFind from Google Play, which Google runs under its own <a href="https://policies.google.com/privacy">privacy policy</a>. Google Play gives us summary statistics such as the number of installs, ratings and reviews, and crash rates collected by Android from people who chose to share usage and diagnostics with Google. We cannot identify you from these statistics.</p>
+<h2 id="sharing-and-selling">Sharing and selling</h2>
+<p>We do not sell your data and we do not share it with third parties. We may disclose information if the law requires it, but we hold almost nothing that could identify you. Crash reports go to Google only so that it can process them for us, as described in "Crash reports". Usage statistics go to Google only so that it can process them for us, as described in "Usage statistics".</p>
+<h2 id="deleting-your-data">Deleting your data</h2>
+<p>You are in control of everything BuddyFind stores:</p>
+<ul><li><strong>Forget one device:</strong> open it in My devices and tap Forget. Its entry is deleted, and the helper records about it are cleared automatically the next time the app handles a battery or connection event. A Find widget set to that device keeps its address until you pick another device or remove the widget. The device stays paired in your phone's Bluetooth settings.</li><li><strong>Delete everything:</strong> in your phone's Settings &gt; Apps &gt; BuddyFind &gt; Storage, tap Clear storage.</li><li><strong>Uninstall the app:</strong> this deletes all of BuddyFind's data from your phone.</li><li><strong>Crash reports</strong> are deleted automatically by Crashlytics, starting 90 days after they are sent. Because they carry no name or account, we usually cannot tell which reports came from you, but you can still write to us at luan91.official@gmail.com and we will help where we can.</li></ul>
+<h2 id="children">Children</h2>
+<p>BuddyFind is a general-audience tool and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has sent us personal information, contact us and we will delete it.</p>
+<h2 id="your-rights">Your rights</h2>
+<p>Depending on where you live (for example under the EU or UK GDPR, or US state privacy laws), you may have the right to ask what personal data we hold about you, to have it corrected or deleted, and to object to how it is used. Since BuddyFind keeps your data on your phone, you can see, change and delete it yourself as described above. For anything else, contact us at luan91.official@gmail.com. You can also complain to your local data protection authority.</p>
+<h2 id="security">Security</h2>
+<p>BuddyFind's data is kept in the app's private storage, which Android protects from other apps. It is not encrypted separately, so protect your phone with a screen lock. Crash reports are sent over an encrypted (HTTPS) connection.</p>
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>If BuddyFind starts handling data differently, for example when a later version adds ads or new features, we will update this policy before that version is released and change the effective date above. Significant changes will also be mentioned in the app's release notes on Google Play.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions or requests about this policy or your data: JC Studio, luan91.official@gmail.com.</p>
+<p style="margin-top:48px"><a href="./">BuddyFind home</a> · <a href="privacy-policy.html">Privacy policy</a> · <a href="terms-of-use.html">Terms of use</a></p>
+</main>
+</body>
+</html>
